@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}maison{% endblock %}
+
+{% block body %}
+
+    <header class="container-fluid p-5 text-center bg-light">
+        <h1>{{ maison.title }}</h1>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row p-5">
+            <div class="col-8 offset-2">
+                <img src="{{ asset('img/maison/' ~ maison.img1) }}" alt="photo principale {{ maison.title }}" class="w-100">
+                <h2>{{ maison.title }}</h2>
+                <p>{{ maison.description }}</p>
+                <ul>
+                    <li>Surface : {{ maison.surface }} m<sup>2</sup></li>
+                    <li>Pièces : {{ maison.rooms }} - dont {{maison.bedrooms }} chambre(s)</li>
+                    <li>Prix : {{ maison.price }} £</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+
+    
+{% endblock %}  

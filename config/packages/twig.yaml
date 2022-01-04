@@ -1,0 +1,13 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        contact_address: '12 rue du Village'
+        contact_city: 'Ville'
+        contact_email: 'prenom.nom@domaine.fr'
+        contact_phone: '01.03.09.55.90'
+        contact_zip: '12345'
+        copyright: 'copyright ©️ 2021 - Khadija BAHI'
+        
+when@test:
+    twig:
+        strict_variables: true
